@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col, Image } from 'react-bootstrap'
 import Wallpaper from '../assets/wallpaper.jpg'
-import Fade from 'react-reveal/Fade';
+import Reveal from 'react-reveal/Reveal';
 import { Link } from 'react-router-dom'
 
 const LandingPage = () => {
@@ -13,12 +13,12 @@ const LandingPage = () => {
         </div>
         <Row>
             <Col sm={12} md={6} className="p-2">
-              <Fade left>
+              <Reveal effect="fadeInUp">
                 <Image src={Wallpaper} fluid />
-              </Fade>
+              </Reveal>
             </Col>
             <Col sm={12} md={6} className="p-2">
-              <Fade right>
+              <Reveal effect="fadeInUp">
                 <div className="my-md-5">
                   <div className="my-md-5 py-md-5 my-3">
                     <Link to="/login">
@@ -29,7 +29,7 @@ const LandingPage = () => {
                     </Link>
                   </div>
                 </div>
-              </Fade>
+              </Reveal>
             </Col>
         </Row>
     </Container>
