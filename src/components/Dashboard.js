@@ -45,7 +45,7 @@ const Dashboard = () => {
             <div className="pt-2 d-flex justify-content-between">
                 <div>
                     <p className="font36 font700 fst-italic text-green">Task Manager</p>
-                    <p className="font16 font500 text-navyblue mt-1">Hi <span className="text-blue fw-bold">{username},</span> Manage your task here</p>
+                    <p className="font16 font500 text-navyblue mt-1">Hi <span className="text-blue fw-bold font18">{username},</span> Manage your task here</p>
                 </div>
             </div>
             <CreateTask task={task} setTask={setTask} handleSubmit={handleSubmit} setData={setTaskData} data={taskData} taskDate={taskDate} setTaskDate={setTaskDate} completedTasks={completedTasks} pending={pending} setPending={setPending} setCompletedTasks={setCompletedTasks} />

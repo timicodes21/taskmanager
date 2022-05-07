@@ -71,10 +71,10 @@ const Createtask = ({ task, setTask, handleSubmit, setData, data, taskDate, setT
                             <Link to={`/tasks/${task._id}`}>
                                 <Row>
                                     <Col xs={12} md={5}>
-                                        <p className="font500 font18 text-blue my-2">{task.task}</p>
+                                        <p className="font500 font18 text-secondary my-2">{task.task}</p>
                                     </Col>
                                     <Col xs={12} md={5}>
-                                        <p className="font500 font12 text-blue my-2">DEADLINE: <span className="font14 text-danger"> {moment(task.date).format("MMM Do")}</span></p>
+                                        <p className="font500 font12 text-danger my-2">DEADLINE: <span className="font14 text-danger"> {moment(task.date).format("MMM Do")}</span></p>
                                     </Col>
                                     <Col xs={12} md={2}>
                                         {task.completed ? <p className="font500 font16 text-green">completed</p> : <p className="font500 font16 text-danger">Pending</p>}
@@ -91,10 +91,10 @@ const Createtask = ({ task, setTask, handleSubmit, setData, data, taskDate, setT
                             <Link to={`/tasks/${task._id}`}>
                                 <Row>
                                     <Col xs={12} md={5}>
-                                        <p className="font500 font18 text-blue my-2">{task.task}</p>
+                                        <p className="font500 font18 text-secondary my-2">{task.task}</p>
                                     </Col>
                                     <Col xs={12} md={5}>
-                                        <p className="font500 font12 text-blue my-2">DEADLINE: <span className="font14 text-danger"> {moment(task.date).format("MMM Do")}</span></p>
+                                        <p className="font500 font12 text-blue my-2">DEADLINE: <span className="font14"> {moment(task.date).format("MMM Do")}</span></p>
                                     </Col>
                                     <Col xs={12} md={2}>
                                         {task.completed ? <p className="font500 font16 text-green">completed</p> : <p className="font500 font16 text-danger">Pending</p>}
@@ -111,10 +111,10 @@ const Createtask = ({ task, setTask, handleSubmit, setData, data, taskDate, setT
                             <Link to={`/tasks/${task._id}`}>
                                 <Row>
                                     <Col xs={12} md={5}>
-                                        <p className="font500 font18 text-blue my-2">{task.task}</p>
+                                        <p className="font500 font18 text-secondary my-2">{task.task}</p>
                                     </Col>
                                     <Col xs={12} md={5}>
-                                        <p className="font500 font12 text-blue my-2">DEADLINE: <span className="font14 text-danger"> {moment(task.date).format("MMM Do")}</span></p>
+                                        <p className="font500 font12 text-danger my-2">DEADLINE: <span className="font14 text-danger"> {moment(task.date).format("MMM Do")}</span></p>
                                     </Col>
                                     <Col xs={12} md={2}>
                                         <p className="font500 font16 text-blue my-2">{task.completed ? <p className="font500 font16 text-green">completed</p> : <p className="font500 font16 text-danger">Pending</p>}</p>

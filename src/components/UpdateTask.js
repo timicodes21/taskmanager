@@ -35,7 +35,7 @@ const UpdateTask = ({ data, setData, id, task, setTask, taskDate, setTaskDate, h
                 <Form.Control as="textarea" placeholder="Update the task" value={task} required onChange={(e) => setTask(e.target.value)} className="login-input" style={{ height: '200px' }}/>
             </FloatingLabel>
             <div className="my-3">
-                <p className="font500 font14 text-danger my-2">Set New Deadline</p>
+                <p className="font500 font14 text-blue my-2">Set New Deadline</p>
                 <input type="date" id="deadline" value={taskDate} onChange={e => setTaskDate(e.target.value)} className="deadline rounded p-3 w-100"/>
             </div>
             <div className="my-3">
@@ -56,10 +56,10 @@ const UpdateTask = ({ data, setData, id, task, setTask, taskDate, setTaskDate, h
                     <div className="shadow-sm p-2 bg-grey rounded my-2">
                         <Row>
                             <Col xs={12} md={5}>
-                                <p className="font500 font18 text-blue my-2">{data.task}</p>
+                                <p className="font500 font18 text-secondary my-2">{data.task}</p>
                             </Col>
                             <Col xs={12} md={5}>
-                                <p className="font500 font12 text-blue my-2">DEADLINE: <span className="font14 text-danger"> {moment(data.date).format("MMM Do")}</span></p>
+                                {data.completed ? <p className="font500 font12 text-blue my-2">DEADLINE: <span className="font14"> {moment(data.date).format("MMM Do")}</span></p> : <p className="font500 font12 text-danger my-2">DEADLINE: <span className="font14 text-danger"> {moment(data.date).format("MMM Do")}</span></p>}
                             </Col>
                             <Col xs={12} md={2}>
                                 {data.completed ? <p className="font500 font14 text-green">completed</p> : <p className="font500 font14 text-danger">Pending</p>}
