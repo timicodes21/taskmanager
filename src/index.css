@@ -142,3 +142,16 @@ a{
   color: #519155 !important;
   font-size: 14px;
 }
+
+.deadline{
+  background-color: rgba(229, 229, 229, 0.8) !important;
+  border-radius: 10px !important;
+  box-shadow: none !important;
+  border: none !important;
+  color: #519155;
+}
+
+.deadline:focus{
+  border: none !important;
+  outline: none !important;
+}
